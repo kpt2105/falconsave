@@ -1,0 +1,47 @@
+#login-text-div {
+  left: 31.7vw;
+}
+#form-div {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  left: 60vw;
+}
+form {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex;
+  font-family: monospace1;
+}
+form h {
+  color: white;
+  font-size: 1.3vw;
+}
+form input {
+  width: 14vw;
+  height: 1.6vw;
+  font-family: monospace1;
+}
+form button {
+  background-color: white;
+  color: #07111a;
+  width: 16vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  margin-top: 4vh;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  font-size: 1.2vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace1;
+}

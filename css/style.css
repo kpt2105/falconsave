@@ -1,0 +1,259 @@
+@font-face {
+  font-family: monospace1;
+  src: url(fonts/Monoton-Regular.ttf);
+}
+@font-face {
+  font-family: monospace2;
+  src: url(fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: bahnschrift1;
+  src: url(fonts/bahnschrift.ttf);
+}
+body {
+  background-color: #fbd600;
+  display: flex;
+  flex-direction: column;
+  margin: unset;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #191818;
+  outline: 1px solid #1b4332;
+}
+#logo-img {
+  margin-top: 0.5vw;
+  margin-left: 4.2vw;
+  width: 3.5vw;
+}
+#logo-img:hover {
+  opacity: 70%;
+  transition: 0.2s;
+}
+.title-div {
+  background-color: white;
+  height: 4.8vw;
+  box-shadow: 13px 13px 34px 5px rgb(0 0 0 / 15%);
+  display: flex;
+  display: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 3vw;
+}
+#main-nav-link {
+  text-decoration: overline;
+  text-decoration-color: #1b4332;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1.1vw;
+  font-size: 1.5vw;
+  font-family: monospace1;
+  color: #1b4332;
+  text-decoration: none;
+}
+.nav-links:hover {
+  text-decoration: overline;
+  text-decoration-color: #1b4332;
+  text-decoration-style: dashed;
+  transition: 0.2s;
+}
+.title-div-1 {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  top: 6vw;
+  padding-bottom: 30vw;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.29vw;
+  /* font-family: Bahnschrift; */
+  font-family: monospace1;
+  color: #191818;
+}
+.strip {
+  /* margin-top: -62vh; */
+  background-image: url("../images/widelogo.png");
+  height: 10vw;
+  width: 200vw;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.strip2 {
+  top: 27vw;
+  background-image: url("../images/widelogo2.png");
+  height: 250px;
+  width: 200vw;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  background-size: 80%;
+}
+.title:hover {
+  color: #cc4025;
+}
+.sub-title {
+  position: absolute;
+  font-family: monospace2;
+  font-family: Bahnschrift1;
+  top: 12vw;
+  font-size: 1.82vw;
+}
+.main-buton {
+  display: flex;
+  position: absolute;
+  border-radius: 1px;
+  top: 18vw;
+  background-color: #191818;
+  color: white;
+  border: none;
+  outline: none;
+  width: 20%;
+  font-size: 2vw;
+  font-family: monospace1;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #191818;
+}
+#section-2-div {
+  background-color: #191818;
+  height: 90vh;
+  width: 100%;
+  margin-top: 1vw;
+}
+.info-icon {
+  width: 4%;
+  margin-top: 26vh;
+}
+.info-icon-div {
+  display: flex;
+  justify-content: center;
+}
+.info-p {
+  margin-top: 8vh;
+  font-family: bahnschrift1;
+  color: #fbd600;
+  text-align: center;
+  font-size: 1.4vw;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+footer {
+  margin-top: auto;
+  height: 5vw;
+  width: auto;
+  left: auto;
+  right: auto;
+  background-color: #fbd600;
+}
+#wrapper {
+  overflow: hidden;
+}
+#c {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  color: #191818;
+  font-family: Bahnschrift1;
+  font-size: 1.3vw;
+}
+footer-text:hover {
+  color: #dbdbdb;
+  transition: 0.2s;
+}
+br {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    min-height: 100vh;
+  }
+  br {
+    display: initial;
+  }
+  .title-div-1 {
+    top: 0vw;
+  }
+  .title {
+    margin-top: 8vw;
+    font-size: 15vw;
+    text-align: center;
+  }
+  .sub-title {
+    top: 64vw;
+    font-size: 7vw;
+    text-align: center;
+  }
+  .main-buton {
+    top: 95vw;
+    width: 60%;
+    font-size: 7vw;
+  }
+  .strip {
+    top: 1vh;
+    height: 40vw;
+    width: 200vw;
+    background-size: 300%;
+  }
+  .strip2 {
+    background-image: url("../images/widelogo.png");
+    top: 125vw;
+    height: 250px;
+    width: 200vw;
+    background-size: 300%;
+  }
+  #section-2-div {
+    height: 125vh;
+    width: 100%;
+    margin-top: 85vw;
+  }
+  .info-icon {
+    width: 17%;
+    margin-top: 7vh;
+  }
+  .info-p {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+    font-size: 4vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+  footer {
+    height: 25vw;
+  }
+  #c {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vw;
+    font-size: 5vw;
+    text-align: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  #wrapper {
+    margin-bottom: 10vh;
+  }
+}
