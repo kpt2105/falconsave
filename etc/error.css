@@ -1,0 +1,129 @@
+@font-face {
+  font-family: monospace1;
+  src: url(../css/fonts/Monoton-Regular.ttf);
+}
+@font-face {
+  font-family: monospace2;
+  src: url(../css/fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: bahnschrift1;
+  src: url(../css/fonts/bahnschrift.ttf);
+}
+body {
+  background-color: #191818;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#cube {
+  border-radius: 6px;
+  background: #fbd600;
+  padding: 0vw;
+  width: 40vw;
+  height: 30vw;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 95vh;
+}
+#logo {
+  position: absolute;
+  width: 6.5vw;
+  margin-top: -18vw;
+}
+#error-code {
+  position: absolute;
+  color: #191818;
+  font-family: monospace1;
+  font-size: 6vw;
+  margin-top: -5vw;
+}
+#error-message {
+  position: absolute;
+  margin-top: 7vw;
+  color: #191818;
+  font-family: bahnschrift1;
+  font-size: 3vw;
+}
+#home-button {
+  position: absolute;
+  margin-top: 20vw;
+  border-radius: 5px;
+  background-color: #191818;
+  color: #fbd600;
+  border: none;
+  outline: none;
+  width: 12vw;
+  font-size: 2.2vw;
+  font-family: monospace1;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+#home-button:hover {
+  background-color: #fbd600;
+  color: #191818;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 500px) {
+  #cube {
+    padding: 20vw;
+  }
+  #logo {
+    width: 17vw;
+    margin-top: -40vw;
+  }
+  #error-code {
+    font-size: 10vw;
+    margin-top: -7vw;
+  }
+  #error-message {
+    margin-top: 15vw;
+    font-size: 7vw;
+  }
+  #home-button {
+    margin-top: 45vw;
+    width: 30vw;
+    font-size: 5vw;
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  #cube {
+    padding: 20vw;
+  }
+  #logo {
+    width: 17vw;
+    margin-top: -20vw;
+  }
+  #error-code {
+    font-size: 10vw;
+    margin-top: -4vw;
+  }
+  #error-message {
+    margin-top: 7vw;
+    font-size: 7vw;
+  }
+  #home-button {
+    margin-top: 23vw;
+    width: 30vw;
+    font-size: 5vw;
+  }
+}
